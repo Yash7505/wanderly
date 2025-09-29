@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Wanderly</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/86/Globe_icon.svg" />
+</head>
+<body>
+  <nav class="nav container">
+    <a class="logo" href="index.html">Wanderly</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="menu">☰</button>
+  </nav>
+
+  <main class="container contact-main">
+    <h1>Contact Us</h1>
+    <p>Design-only contact form — submissions are not sent (assignment requirement).</p>
+
+    <form class="contact-form" onsubmit="return false;">
+      <label>Name
+        <input type="text" required placeholder="Your name">
+      </label>
+
+      <label>Email
+        <input type="email" required placeholder="Your email">
+      </label>
+
+      <label>Gender
+        <select>
+          <option>Prefer not to say</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label>Country
+        <select>
+          <option>India</option>
+          <option>United States</option>
+          <option>United Kingdom</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label>Message
+        <textarea placeholder="Your message"></textarea>
+      </label>
+
+      <button type="submit">Send (design only)</button>
+    </form>
+
+    <section class="contact-info">
+      <h3>Professional Contact</h3>
+      <p>Email: hello@wanderly.com</p>
+      <p>Phone: +91 90000 00000 (optional)</p>
+      <div class="socials">
+        <a href="#">Instagram</a> •
+        <a href="#">Facebook</a> •
+        <a href="#">LinkedIn</a> •
+        <a href="#">X/Twitter</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Wanderly</h4>
+        <p>Travel website — inspiration & ideas.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: hello@wanderly.com</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="icons">
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year3"></span> Wanderly</p>
+  </footer>
+
+<script>
+  document.getElementById('year3').textContent = new Date().getFullYear();
+  document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
