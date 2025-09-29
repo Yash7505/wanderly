@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wanderly — Explore the World</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/86/Globe_icon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="index.html">Wanderly</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="menu">☰</button>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Wanderly</h1>
+        <p class="tagline">Turn your travel dreams into memories</p>
+        <a class="cta" href="#featured">Explore Destinations</a>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="beach">
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="featured" class="featured container">
+      <h2>Featured Destinations</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2" alt="Paris">
+          <h3>Paris, France</h3>
+          <p>Romantic streets, cafes and the Eiffel Tower.</p>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1549888834-1d6322c7d3ef?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3" alt="Bali">
+          <h3>Bali, Indonesia</h3>
+          <p>Tropical beaches, temples and rice terraces.</p>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1518684079-9b0c8b1862f7?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=4" alt="Swiss Alps">
+          <h3>Swiss Alps, Switzerland</h3>
+          <p>Snow-capped peaks and scenic train rides.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="why container">
+      <h2>Why Wanderly?</h2>
+      <div class="cols">
+        <div>
+          <h4>Mission</h4>
+          <p>Make travel planning simple and inspiring for every traveler.</p>
+        </div>
+        <div>
+          <h4>Vision</h4>
+          <p>Become the go-to travel inspiration site for memorable journeys.</p>
+        </div>
+        <div>
+          <h4>Why Choose Us</h4>
+          <p>Handpicked destinations, beautiful photos, and easy planning tips.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter container">
+      <h2>Stay Updated</h2>
+      <p>Subscribe for travel tips and offers (design-only).</p>
+      <form class="subscribe-form" onsubmit="return false;">
+        <input type="email" placeholder="Your email" aria-label="email">
+        <button>Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Wanderly</h4>
+        <p>Travel website — inspiration & ideas.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: hello@wanderly.com</p>
+      </div>
+      <div class="socials">
+        <h4>Follow</h4>
+        <div class="icons">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Wanderly</p>
+  </footer>
+
+<script>
+  // small interactive: year + mobile menu
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
