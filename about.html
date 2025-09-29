@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Wanderly</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/8/86/Globe_icon.svg" />
+</head>
+<body>
+  <nav class="nav container">
+    <a class="logo" href="index.html">Wanderly</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="menu">☰</button>
+  </nav>
+
+  <header class="about-hero">
+    <div class="overlay">
+      <div class="container about-text">
+        <h1>About Wanderly</h1>
+        <p>We believe travel opens minds and creates memories. Explore our handpicked destinations and stories.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container about-main">
+    <section>
+      <h2>Our Story</h2>
+      <p>Wanderly started as a student project to create an elegant, responsive travel website that inspires journeys.</p>
+    </section>
+
+    <section class="three-sections">
+      <div>
+        <h3>Mission</h3>
+        <p>Deliver beautiful travel ideas for everyone.</p>
+      </div>
+      <div>
+        <h3>Vision</h3>
+        <p>Make travel planning joyful and easy.</p>
+      </div>
+      <div>
+        <h3>What we focus on</h3>
+        <p>Culture, nature, and unique experiences.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Wanderly</h4>
+        <p>Travel website — inspiration & ideas.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: hello@wanderly.com</p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="icons">
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year2"></span> Wanderly</p>
+  </footer>
+
+<script>
+  document.getElementById('year2').textContent = new Date().getFullYear();
+  document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
